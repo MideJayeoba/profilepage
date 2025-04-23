@@ -1,0 +1,194 @@
+/* General Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+  min-height: 100vh;
+  align-items: center;
+  padding: 20px;
+} 
+
+/* Navigation Bar */
+nav {
+  width: 100%;
+  background-color: #004080;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 15px 0;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  margin-bottom: 50px;
+}
+
+nav p {
+  margin: 0;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  padding: 8px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+nav a:hover,
+nav a:focus {
+  background-color: #0066cc;
+  outline: none;
+}
+
+nav a.active {
+  background-color: #003366;
+}
+
+/* section */
+.home{
+    margin-top: 5px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.profile{
+    padding: 50px 12px 20px;
+    border-radius: 10px;
+    background-color: gray;
+}
+
+
+/* Profile Image */
+.imgprofile {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #004080;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  margin: 20px 0 10px;
+}
+
+/* Headings */
+h2 {
+  font-size: 2rem;
+  color: #004080;
+  margin-bottom: 10px;
+}
+
+h3 {
+    font: 'Franklin Gothic Medium';
+  font-size: 1.42rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+/* Paragraphs */
+p {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.about{
+  width: 75%;
+  height: 60%;
+  border-radius: 20px;
+}
+
+.bigdiv{
+  padding-left: 20px;
+  background-color: aliceblue;
+  border-radius: 15px;
+  margin: 40px 4px 50px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+input, textarea {
+  padding: 0.8rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 1rem;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+button {
+  padding: 0.8rem 1rem;
+  border: none;
+  background: #0b3d91;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #092a6e;
+}
+
+.contact-info {
+  margin-right: 30px;
+  text-align: start;
+  margin-top: 2rem;
+  color: #555;
+  font-size: 0.90rem;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  body {
+    padding: 10px;
+  }
+
+  nav {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  section {
+    padding: 20px;
+    margin-top: 20px;
+  }
+
+  .imgprofile {
+    width: 120px;
+    height: 120px;
+  }
+
+  .about{
+    width: 50%;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+  }
+
+  h3 {
+    font-size: 1.1rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+}

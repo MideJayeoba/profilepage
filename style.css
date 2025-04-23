@@ -1,4 +1,4 @@
-/* General Reset and Base Styles */
+General Reset and Base Styles
 * {
   margin: 0;
   padding: 0;
@@ -8,6 +8,10 @@
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: #f9f9f9;
+  background-image: url('img/mesky.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   color: #333;
   line-height: 1.6;
   min-height: 100vh;
@@ -15,13 +19,11 @@ body {
   padding: 20px;
 } 
 
+
 /* Navigation Bar */
 nav {
   width: 100%;
   background-color: #004080;
-  display: flex;
-  justify-content: center;
-  gap: 30px;
   padding: 15px 0;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   position: sticky;
@@ -30,11 +32,18 @@ nav {
   margin-bottom: 50px;
 }
 
-nav p {
+nav ul {
   margin: 0;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
 }
 
 nav a {
+
   color: #fff;
   text-decoration: none;
   font-weight: 600;
@@ -54,6 +63,14 @@ nav a.active {
   background-color: #003366;
 }
 
+
+/* header */
+
+header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
 /* section */
 .home{
     margin-top: 5px;
@@ -64,7 +81,7 @@ nav a.active {
 .profile{
     padding: 50px 12px 20px;
     border-radius: 10px;
-    background-color: gray;
+    background-color: #0066cc;
 }
 
 
@@ -96,7 +113,7 @@ h3 {
 /* Paragraphs */
 p {
   font-size: 1.1rem;
-  color: #666;
+  color: #3f1212;
   margin-bottom: 15px;
 }
 
@@ -116,8 +133,9 @@ p {
 form {
   display: flex;
   flex-direction: column;
-  gap: 1.2rem;
+  gap: 20px;
 }
+
 
 input, textarea {
   padding: 0.8rem 1rem;
@@ -128,11 +146,11 @@ input, textarea {
 
 textarea {
   resize: vertical;
-  min-height: 120px;
+  min-height: 200px;
 }
 
 button {
-  padding: 0.8rem 1rem;
+  padding: 6px 12px;
   border: none;
   background: #0b3d91;
   color: white;
@@ -141,6 +159,10 @@ button {
   border-radius: 10px;
   cursor: pointer;
   transition: background 0.3s ease;
+  height: 90px;
+  width: 50%;
+  align-self: center;
+
 }
 
 button:hover {
@@ -155,13 +177,42 @@ button:hover {
   font-size: 0.90rem;
 }
 
+.contact-info a {
+  color: #004080;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+
+.contact-form{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+/* footer */
+footer {
+  text-align: center;
+  padding: 20px;
+
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  margin-top: 120px;
+}
+footer p {
+  font-size: 1.3rem;
+  color: #fdfdfd;
+}
+
 /* Responsive Design */
 @media (max-width: 600px) {
   body {
     padding: 10px;
   }
 
-  nav {
+  nav ul {
     flex-direction: column;
     gap: 15px;
   }

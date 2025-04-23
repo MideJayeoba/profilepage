@@ -6,19 +6,28 @@
     <title>Contact me</title>
     <link rel="stylesheet" href="style.css">
 </head>
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About me</a></li>
+        <li><a href="contact.html">Contact Me</a></li>
+    </ul>
+</nav>
+<header>
+    <h1>Contact Me</h1>
+    <p>I'd love to hear from you!</p>
+</header>
 <body>
     <div class="contact-container">
         <h1>Let’s Talk 👋</h1>
         <p>Have a project, idea or just want to say hi? I’d love to hear from you!</p>
-    <div class="home">
-
+    <div class="contact-form">
         <div class="contact-info">
-            <p>Email: midejayeoba1@gmail.com</p>
-            <p>Phone: +234 906 733 3517</p>
-            <p>Location: Akure, Ondo, Nigeria</p>
-          </div>
-          
-        <form>
+            <p>Email: <a href="mailto:midejayeoba1@gmail.com">midejayeoba1@gmail.com</a></p>
+            <p>Phone: <a href="tel:+2349067333517">+234 906 733 3517</a></p>
+            <p>Location: <a href="https://www.google.com/maps/place/Akure,+Ondo,+Nigeria" target="_blank">Akure, Ondo, Nigeria</a></p>
+        </div>
+        <form action="mailto:midejayeoba1@gmail.com" method="post" enctype="text/plain"></form>
           <input type="text" name="name" placeholder="Your Full Name" required />
           <input type="email" name="email" placeholder="Your Email Address" required />
           <textarea name="message" placeholder="Your Message Here..." required></textarea>
@@ -26,4 +35,7 @@
         </form>
     </div>
 </body>
+<footer>
+    <p>&copy; 2025 Mide Jayeoba. All rights reserved.</p>
+</footer>
 </html>
